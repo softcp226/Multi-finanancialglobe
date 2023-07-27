@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     left: 10px;
-    z-index: 100;
+    z-index: 500;
 }
 .whatsapp-icon{
     width: 70px;

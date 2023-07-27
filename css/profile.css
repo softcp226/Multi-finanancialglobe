@@ -8,7 +8,8 @@ main.profiler {
   /* left: 10vw; */
   flex-direction: column;
   position: relative;
-  top: 50px;
+  top: 10px;
+  padding-top: 50px;
 }
 
 
@@ -53,8 +54,8 @@ main.profiler {
     padding: 8px;
     border-radius: 5px;
     border-color: #eee;
-    border: 1px solid #081336;
-    background-color: #081336;
+    border: 1px solid #041d9b;
+    background-color: #041d9b;
     color: #fff;
     margin: auto;
     /* margin-top: 8px; */
@@ -89,7 +90,8 @@ main.profiler {
   /* left: 10vw; */
   flex-direction: row;
   position: relative;
-  top: 110px;
+  /* top: 10px; */
+  padding-top: 100px;
 }
 
 
@@ -120,8 +122,8 @@ main.profiler {
     padding: 15px;
     border-radius: 5px;
     border-color: #eee;
-    border: 1px solid #081336;
-    background-color: #081336;
+    border: 1px solid #041d9b;
+    background-color: #041d9b;
     color: #fff;
     margin: auto;
     margin-top: 8px;
@@ -140,7 +142,7 @@ main.profiler {
     /* left: 10vw; */
     flex-direction: row;
     position: relative;
-    top: 110px;
+    top: 10px;
   }
 
   .user-profile-container,
@@ -185,8 +187,8 @@ main.profiler {
     padding: 15px;
     border-radius: 5px;
     border-color: #eee;
-    border: 1px solid #081336;
-    background-color: #081336;
+    border: 1px solid #041d9b;
+    background-color: #041d9b;
     color: #fff;
     margin: auto;
     margin-top: 8px;
