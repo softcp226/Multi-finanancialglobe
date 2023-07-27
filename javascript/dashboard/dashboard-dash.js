@@ -45,14 +45,15 @@ const getCookie = (cname) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "http://localhost:5000/api/user/find",
-    // "https://sterileenergy-backend01.glitch.me/api/user/find",
-    
-     {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, user }),
-    });
+      // "http://localhost:5000/api/user/find",
+      "https://multi-financialglobe-backend.glitch.me/api/user/find",
+
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, user }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {

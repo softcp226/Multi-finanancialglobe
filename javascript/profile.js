@@ -3,8 +3,8 @@ const handle_updateuser = async (form) => {
   document.querySelector("#update").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      // "https://sterileenergy-backend01.glitch.me/api/user/update",
-      "http://localhost:5000/api/user/update",
+      "https://multi-financialglobe-backend.glitch.me/api/user/update",
+      // "http://localhost:5000/api/user/update",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -31,8 +31,8 @@ const updatepassword = async (form) => {
   document.querySelector("#change").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-    // "https://sterileenergy-backend01.glitch.me/api/user/update/update_password",
-      "http://localhost:5000/api/user/update/update_password",
+  "https://multi-financialglobe-backend.glitch.me/api/user/update/update_password",
+      // "http://localhost:5000/api/user/update/update_password",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -152,8 +152,8 @@ document.querySelectorAll("input").forEach((input) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      // "https://sterileenergy-backend01.glitch.me/api/user/find",
-      "http://localhost:5000/api/user/find",
+      "https://multi-financialglobe-backend.glitch.me/api/user/find",
+      // "http://localhost:5000/api/user/find",
 
       {
         method: "POST",

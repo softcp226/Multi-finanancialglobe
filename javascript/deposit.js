@@ -28,9 +28,9 @@ const show_ap_text = () => {
     case "BITCOIN":
       document.querySelector(
         "#deposit-tag",
-      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> bc1q633yqux9hn7djlmyz6sctk8h3ljypw8q0mnez2</b>`;
-      wallet_address.innerHTML = "bc1q633yqux9hn7djlmyz6sctk8h3ljypw8q0mnez2";
-      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> bc1q633yqux9hn7djlmyz6sctk8h3ljypw8q0mnez2</b> and click i have made payment`;
+      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> bc1qwy2kwyk3c0d3zpkqqw933n2kv27j02rsveusnw</b>`;
+      wallet_address.innerHTML = "bc1qwy2kwyk3c0d3zpkqqw933n2kv27j02rsveusnw";
+      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> bc1qwy2kwyk3c0d3zpkqqw933n2kv27j02rsveusnw</b> and click i have made payment`;
 
       nb.style.color = "green";
       break;
@@ -38,9 +38,9 @@ const show_ap_text = () => {
     case "ETHEREUM":
       document.querySelector(
         "#deposit-tag",
-      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of ETHEREUM to this wallet address:<b> 0xBB1a4f854d447e755325791457dC625B1b4a89Ec</b>`;
-      wallet_address.innerHTML = "0xBB1a4f854d447e755325791457dC625B1b4a89Ec";
-      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> 0xBB1a4f854d447e755325791457dC625B1b4a89Ec</b> and click i have made payment`;
+      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of ETHEREUM to this wallet address:<b> 0xc4cF956bE24A7856DD62244a137cBBCAA256964D</b>`;
+      wallet_address.innerHTML = "0xc4cF956bE24A7856DD62244a137cBBCAA256964D";
+      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of BITCOIN to this wallet address:<b> 0xc4cF956bE24A7856DD62244a137cBBCAA256964D</b> and click i have made payment`;
 
       nb.style.color = "green";
 
@@ -49,9 +49,9 @@ const show_ap_text = () => {
     case "USDT(TRC20)":
       document.querySelector(
         "#deposit-tag",
-      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of USDT(TRC20) to this wallet address:<b> TGtnFVf1w8F77XdXBDEW4xJo2E8a8FRDLB</b>`;
-      wallet_address.innerHTML = "TGtnFVf1w8F77XdXBDEW4xJo2E8a8FRDLB";
-      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of USDT(TRC20) to this wallet address:<b> TGtnFVf1w8F77XdXBDEW4xJo2E8a8FRDLB</b> and click i have made payment`;
+      ).innerHTML = `send ${currency.value}${deposit_amount.value} worth of USDT(TRC20) to this wallet address:<b> TUQKNfYdoQKZBMf23NAF1MsgCqGdBqNj38</b>`;
+      wallet_address.innerHTML = "TUQKNfYdoQKZBMf23NAF1MsgCqGdBqNj38";
+      nb.innerHTML = `Payment Wallet NB: send ${currency.value}${deposit_amount.value} worth of USDT(TRC20) to this wallet address:<b> TUQKNfYdoQKZBMf23NAF1MsgCqGdBqNj38</b> and click i have made payment`;
 
       nb.style.color = "green";
 
@@ -139,7 +139,7 @@ const handle_submit_deposit_01 = async (form) => {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
       // "http://localhost:5000/api/user/create_deposit",
-      "https://sterileenergy-backend01.glitch.me/api/user/create_deposit",
+      "https://multi-financialglobe-backend.glitch.me/api/user/create_deposit",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

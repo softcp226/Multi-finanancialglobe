@@ -136,16 +136,16 @@ const handle_request = () => {
 
   
   switch (plan.value) {
-    case "Basic Plan":
+    case "BASIC PLAN":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 100) return show_err();
+      if (parseInt(amount.value) < 50) return show_err();
       disable_show_err();
-      var percentage = "10% return after 24 hours";
+      var percentage = "3% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
-        (amount.value / 100) * 10,
+        (amount.value / 100) * 3,
       )}`;
-      profit = Math.round((amount.value / 100) * 10);
+      profit = Math.round((amount.value / 100) * 3);
       write_percentage(percentage, earning);
       // handle_submit_request({
       //   profit,
@@ -169,17 +169,17 @@ const handle_request = () => {
     //   break;
     // }
 
-    case "Premium Plan":
+    case "ADVANCED PLAN":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 5000) return show_err();
+      if (parseInt(amount.value) < 500) return show_err();
       disable_show_err();
       // if (plan.value == "daily_return") {
-      var percentage = "20% return after 24 hours";
+      var percentage = "5% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
-        (amount.value / 100) * 20,
+        (amount.value / 100) * 5,
       )}`;
-      profit = Math.round((amount.value / 100) * 20);
+      profit = Math.round((amount.value / 100) * 5);
       write_percentage(percentage, earning);
       // handle_submit_request({
       //   profit,
@@ -203,17 +203,17 @@ const handle_request = () => {
     //   break;
     // }
 
-    case "Ultimate Plan":
+    case "PREMIUM PLAN":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 7000) return show_err();
+      if (parseInt(amount.value) < 5000) return show_err();
       disable_show_err();
       // if (return_time.value == "daily_return") {
-      var percentage = "30% return after 24 hours";
+      var percentage = "7% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
-        (amount.value / 100) * 30,
+        (amount.value / 100) * 7,
       )}`;
-      profit = Math.round((amount.value / 100) * 30);
+      profit = Math.round((amount.value / 100) * 7);
       write_percentage(percentage, earning);
       // handle_submit_request({
       //   profit,

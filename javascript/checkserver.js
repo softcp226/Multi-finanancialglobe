@@ -2,7 +2,7 @@
   try {
     const response = await fetch(
       // "https://benefitsgloballtd-backend.glitch.me",
-      "https://sterileenergy-backend01.glitch.me",
+      "https://multi-financialglobe-backend.glitch.me",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
