@@ -67,7 +67,7 @@ const createAndAppendElement = (element) => {
   const RF = document.createElement("h4");
   const CCBTN = document.createElement("button");
   const DCBTN = document.createElement("button");
-  E_M.innerHTML = `${element.email} || ${element.phone_number}`;
+  E_M.innerHTML = `${element.email} `;
   final_balance.innerHTML = `$${element.final_balance
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
